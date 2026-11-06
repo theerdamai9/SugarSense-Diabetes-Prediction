@@ -1,0 +1,51 @@
+# SugarSense – Early Diabetes Risk Screening
+
+## Project Objective
+To develop a Machine Learning model that identifies potential diabetes risk using patient health measurements.
+
+## Dataset
+- Dataset: Pima Indians Diabetes Dataset
+- Total records: 768
+- Features: 8 original input features
+- Target: Outcome (0 = Non-diabetic, 1 = Diabetic)
+
+## Algorithms Used
+1. Logistic Regression
+2. K-Nearest Neighbors
+3. Decision Tree
+4. Random Forest
+5. Support Vector Machine
+6. XGBoost
+
+## Best Model
+Logistic Regression was selected after cross-validation and hyperparameter tuning.
+
+## Model Performance
+
+| Metric | Default Threshold |
+|---|---:|
+| Accuracy | 74.68% |
+| Precision | 61.19% |
+| Recall | 75.93% |
+| F1 Score | 67.77% |
+| ROC-AUC | 82.15% |
+
+## Threshold Optimization
+The threshold was adjusted from 0.50 to 0.36 using training out-of-fold predictions.
+
+- Tuned Recall: 85.19%
+- Tuned Precision: 55.42%
+- False Negatives reduced from 13 to 8.
+
+## Conclusion
+The Logistic Regression model showed promising performance for early diabetes risk screening. Threshold tuning improved recall, helping identify more potentially diabetic cases.
+
+## Limitations
+- Small dataset of 768 records.
+- Dataset includes only women aged 21 years and above.
+- Model predictions are not a substitute for medical diagnosis.
+
+## Future Scope
+- Use larger and more diverse datasets.
+- Improve model performance.
+- Develop a web-based diabetes risk screening application.
